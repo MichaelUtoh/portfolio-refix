@@ -30,8 +30,9 @@ a:hover {
 }
 
 .card {
-  background: rgb(21, 21, 21);
-  border: .5px solid rgb(52, 52, 52)
+  background: #151515;
+  border: .5px solid #343434;
+  /* transform: translate(10px); */
 }
 
 .font-one {
