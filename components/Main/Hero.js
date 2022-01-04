@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const HeroComponent = () => {
     return (
         <>
-            <div className="border-b-2 flex flex-col h-[600px] items-center justify-center lg:w-full">
+            <div className="flex flex-col min-h-[570px] items-center justify-center lg:w-full">
                 <motion.div 
                     initial={{ opacity:0, y:100 }}
                     animate={{ opacity:1, y:0, transition:{ duration:1 } }}
@@ -28,23 +28,23 @@ const HeroComponent = () => {
 
             </div>
 
-            <div className="bg-white flex justify-center h-4 w-full">
-
+            <div className="bg-black flex justify-center h-10 w-full">
+                <img src="/5944-scroll-down.gif" height="18px" width="37px" />
             </div>
 
 
             {/* Cards */}
-            <div className="flex justify-between lg:w-8/12 mt-20">
+            <div className="flex justify-center lg:w-full mt-20">
 
-                <div className="card flex flex-col font-one items-center justify-center h-60 m-2 text-white w-64">
+                <div className="card flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64">
                     <p className="text-lg w-10/12 text-center">Autohub Project</p>
                 </div>
 
-                <div className="card flex flex-col font-one items-center justify-center h-60 m-2 text-white w-64">
+                <div className="card flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64">
                     <p className="text-lg w-10/12 text-center">The SideBrief Project</p>
                 </div>
 
-                <div className="card flex flex-col font-one items-center transform-gpu justify-center h-60 m-2 text-white w-64">
+                <div className="card flex flex-col font-one items-center transform-gpu justify-center h-60 m-4 text-white w-64">
                     <p className="text-lg w-10/12 text-center">IQ School Management Application</p>
                 </div>
             </div>
