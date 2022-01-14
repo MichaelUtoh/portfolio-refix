@@ -19,11 +19,12 @@ const BannerComponent = () => {
                 <motion.button
                     animate="visible"
                     initial="hidden"
+                    className="bg-blue-500 font-bold mt-4 px-10 py-1 rounded-sm text-sm text-white"
                     variants={{ hidden: { scale: .8, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { delay: 1.5 }}}}
                     whileHover={{ scale:1.2, transition: { duration: 0.2 }, }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <button className="bg-blue-500 font-bold mt-4 px-10 py-1 rounded-sm text-sm text-white">Get Started</button>
+                    <p>Get Started</p>
                 </motion.button>
 
                 <a href="#projects" className="absolute bottom-2">
