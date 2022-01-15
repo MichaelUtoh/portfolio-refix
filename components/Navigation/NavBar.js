@@ -11,9 +11,8 @@ const NavBar = () => {
                 </Link>
 
                 <ul className="flex justify-between">
-                    <li className="ml-6 font-thin cursor-pointer hover:text-blue-300 text-sm"><a>About</a></li>
-                    <li className="ml-6 font-thin cursor-pointer hover:text-blue-300 text-sm"><a>Contact</a></li>
-                    <li className="ml-6 font-thin cursor-pointer hover:text-blue-300 text-sm"><a>Zazoo</a></li>
+                    <li className="ml-6 font-thin font-two cursor-pointer hover:text-blue-300 text-sm"><a>About</a></li>
+                    <li className="ml-6 font-thin font-two cursor-pointer hover:text-blue-300 text-sm"><a>Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import NavBar from "../components/Navigation/NavBar";
 import Header from "../components/Navigation/Header"
-import HeroComponent from "../components/Main/Homepage";
+import HeroComponent from "../components/Main/homepage";
 
 
 export default function Home() {

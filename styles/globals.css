@@ -34,3 +34,13 @@ body {
 .font-two {
   font-family: 'Rubik', sans-serif;
 }
+
+.main-text {
+    animation: flicker 1.5s infinite alternate;     
+}
+
+@keyframes flicker {
+  0% { color: #FEF9C3; }
+  50% { color: #D1FAE5; }
+  100% { color: #A5F3FC; }
+}
