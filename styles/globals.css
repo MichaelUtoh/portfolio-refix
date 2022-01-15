@@ -35,6 +35,27 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.icon-facebook:hover {
+  color: #3B5998;
+}
+
+.icon-google:hover {
+  color: #fff;
+}
+
+.icon-github:hover {
+  color: #171515;
+}
+
+.icon-linkedin:hover {
+  color: #0077b5;
+}
+
+.icon-twitter:hover {
+  color: #00ACEE;
+}
+
+
 .main-text {
     animation: flicker 1.5s infinite alternate;     
 }
