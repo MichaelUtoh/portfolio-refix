@@ -10,7 +10,7 @@ const BannerComponent = () => {
                     animate={{ opacity:1, y:0, transition:{ duration:1 } }}
                 >
                     <div className="flex flex-col items-center justify-center lg:w-full">
-                        <p className="font-medium font-one text-5xl text-white">Fullsnack Developer Extraordinaire</p>
+                        <p className="font-medium font-one text-5xl text-white">Fullstack Developer Extraordinaire</p>
                         <p className="font-thin font-two mt-2 text-md text-gray-400 w-8/12 text-center">
                             Started my professional coding journey 2 years ago, working with JavaScript & Python(Django)
                         </p>
