@@ -25,7 +25,7 @@ const ProjectsComponent = () => {
                 >
                     <Link href="#">
                         <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font-two font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">AutoHub Project</p>
+                            <p className="font-two font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">AutoHub</p>
                             <p className="font-thin text-md text-center">A personal project, written in Python, Rest Framework & React</p>
                         </div>
                     </Link>
