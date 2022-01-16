@@ -7,7 +7,7 @@ const ContactComponent = () => {
             <div className="bg-green-500 flex h-250 items-center justify-center lg:w-full mt-20 relative">
 
                 <div className="absolute flex flex-col items-center justify-center my-20 w-10/12">
-                    <p className="text-[#fff] align-center font-two text-center w-8/12">I'm always open to new Projects and Collaborations 
+                    <p className="text-[#fff] align-center font-two text-center w-8/12">I&lsquo;m always open to new Projects and Collaborations 
                         both from Clients and Tech Enthusiasts, I love to interact with other devs on twitter, but clients 
                         can always reach me through mail.
                     </p>

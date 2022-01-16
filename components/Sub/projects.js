@@ -23,7 +23,7 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <Link href="#">
+                    <Link href="#" passHref={true}>
                         <div className="flex flex-col h-full items-center justify-start p-3">
                             <p className="font-two font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">AutoHub</p>
                             <p className="font-thin text-md text-center">A personal project, written in Python, Rest Framework & React</p>
@@ -48,7 +48,7 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <Link href="#">
+                    <Link href="#" passHref={true}>
                         <div className="flex flex-col h-full items-center justify-start p-3">
                             <p className="font-two font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">The Sidebrief Project</p>
                             <p className="font-thin text-md text-center">A business creation tool, frontend project made with JavaScript & React</p>
@@ -73,7 +73,7 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <Link href="#">
+                    <Link href="#" passHref={true}>
                         <div className="flex flex-col h-full items-center justify-start p-3">
                             <p className="font-two font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">IQ App</p>
                             <p className="font-thin text-md text-center">A valuable education tool built for school admins, tutors & scholars</p>

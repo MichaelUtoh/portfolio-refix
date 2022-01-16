@@ -7,7 +7,7 @@ const NavBar = () => {
         <div className="border-b-custom lg:w-full mx-auto  p-2 text-white">
             <div className="items-baseline flex justify-between lg:w-10/12 p-2 mx-auto">
 
-                <Link href="/">
+                <Link href="/" passHref={true}>
                     <h1 className="cursor-pointer text-white font-one font-thin text-xl">Michael Utoh</h1>
                 </Link>
 
