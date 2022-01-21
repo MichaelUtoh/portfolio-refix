@@ -9,8 +9,8 @@ const HeroComponent = () => {
         <>
             <div className="h-screen main">
                 <BannerComponent />
-                {/* <ProjectsComponent /> */}
-                {/* <ContactComponent /> */}
+                <ProjectsComponent />
+                <ContactComponent />
             </div>
         </>
     )

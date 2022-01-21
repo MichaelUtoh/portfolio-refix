@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 @tailwind base;
@@ -26,29 +27,19 @@ body {
   border: .5px solid #343434;
 }
 
-.font-one {
-  font-family: 'Itim', cursive;
+.font {
+  font-family: 'Montserrat', cursive;
 }
 
-.font-two {
-  font-family: 'Rubik', sans-serif;
+.greykol {
+  background: #ffffff0a;
+  border: .5px solid #343434;
 }
 
-.icon-facebook:hover {
-  color: #3B5998;
-}
-
-.icon-google:hover {
-  color: #fff;
-}
-
-.icon-github:hover {
-  color: #171515;
-}
-
-.icon-linkedin:hover {
-  color: #0077b5;
-}
+.icon-facebook:hover { color: #3B5998; }
+.icon-google:hover { color: #fff; }
+.icon-github:hover { color: #171515; }
+.icon-linkedin:hover { color: #0077b5; }
 
 .icon-twitter:hover {
   color: #00ACEE;
@@ -60,15 +51,28 @@ body {
 }
 
 .neonText {
-    animation: flicker 1.5s infinite alternate;
-}
-
-.text-custom {
-  font-size: 4.5rem;
+    animation: flicker 5s infinite alternate;
 }
 
 @keyframes flicker {
   0% { color: #FEF9C3; }
   50% { color: #D1FAE5; }
   100% { color: #A5F3FC; }
+}
+
+.pg-custom { font-size: 1rem; }
+.text-custom { font-size: 3rem; }
+.text-custom-alt { font-size: 2.2rem; }
+
+@media screen and (max-width: 1100px) {
+  .pg-custom { font-size: .9rem; }
+  .text-custom { font-size: 3rem; }
+  .text-custom-alt { font-size: 1.4rem; }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar { display: none; }
+  .pg-custom { font-size: .8rem; }
+  .text-custom { font-size: 2.4rem; }
+  .text-custom-alt { font-size: 1.1rem; }
 }
