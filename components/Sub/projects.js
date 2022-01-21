@@ -6,9 +6,9 @@ import { motion, animatePresence } from 'framer-motion';
 const ProjectsComponent = () => {
     return (
         <>
-            <div className="flex h-screen items-center justify-center lg:w-full mt-20" id="projects">
+            <div className="flex items-center justify-center w-full mt-20" id="projects">
                 <motion.div
-                    className="card flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64"
+                    className="card cursor-pointer flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64"
                     whileHover={{
                         scale: [1, 1.4, 1.2],
                         rotate: [0, 10, -10, 0],
@@ -33,7 +33,7 @@ const ProjectsComponent = () => {
 
 
                 <motion.div
-                    className="card flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64"
+                    className="card cursor-pointer flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64"
                     whileHover={{
                         scale: [1, 1.4, 1.2],
                         rotate: [0, 10, -10, 0],
@@ -58,7 +58,7 @@ const ProjectsComponent = () => {
 
 
                 <motion.div
-                    className="card flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64"
+                    className="card cursor-pointer flex flex-col font-one items-center justify-center h-60 m-4 text-white w-64"
                     whileHover={{
                         scale: [1, 1.4, 1.2],
                         rotate: [0, 10, -10, 0],

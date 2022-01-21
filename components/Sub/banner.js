@@ -4,13 +4,30 @@ import { motion } from 'framer-motion'
 const BannerComponent = () => {
     return (
         <>
-            <div className="bg-[url('/img-developer.jpg')] bg-no-repeat bg-left flex flex-col min-h-[600px] items-center justify-center lg:w-full relative">
+            <div className="flex flex-col items-center justify-center py-32">
                 <motion.div 
                     initial={{ opacity:0, y:100 }}
                     animate={{ opacity:1, y:0, transition:{ duration:1 } }}
                 >
                     <div className="flex flex-col items-center justify-center lg:w-full">
-                        <p className="font-medium font-one lg:text-5xl md:text-4xl md:flex main-text text-white neonText">Fullstack Developer Extraordinaire</p>
+                        <div className="flex">
+                        <p className="font-medium font-two text-custom uppercase text-blue-400">
+                            <span>M</span>
+                            <span>i</span>
+                            <span>c</span>
+                            <span>h</span>
+                            <span>a</span>
+                            <span>e</span>
+                            <span>l </span>
+                        </p>
+                        <p className="font-medium font-two text-custom uppercase text-blue-400">
+                            <span>&nbsp;U</span>
+                            <span>t</span>
+                            <span>o</span>
+                            <span>h</span>
+                        </p>
+                        </div>
+                        <p className="bg-blue-400 p-2 px-4 rounded-sm text-4xl font-bold text-[#212121] uppercase">Fullstack Web Developer</p>
                         <p className="font-thin font-two mt-4 text-md text-gray-400 w-8/12 text-center">
                             Started my professional coding journey 2 years ago, working with JavaScript & Python(Django)
                         </p>
@@ -24,7 +41,7 @@ const BannerComponent = () => {
                     whileHover={{ scale:1.2, transition: { duration: 0.2 }, }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <p>Get Started</p>
+                    <p>Get in touch</p>
                 </motion.button>
             </div>
         </>

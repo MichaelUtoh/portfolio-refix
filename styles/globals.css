@@ -9,8 +9,7 @@ body {
   background: #040404;
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  min-height: 100vh !important;
   scroll-behavior: smooth;
 }
 
@@ -55,9 +54,17 @@ body {
   color: #00ACEE;
 }
 
+.main {
+  overflow-y: scroll;
+  width: 100vw;
+}
 
-.main-text {
-    animation: flicker 1.5s infinite alternate;     
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+}
+
+.text-custom {
+  font-size: 4.5rem;
 }
 
 @keyframes flicker {

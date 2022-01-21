@@ -7,9 +7,11 @@ import BannerComponent from '../Sub/banner'
 const HeroComponent = () => {
     return (
         <>
-            <BannerComponent />
-            <ProjectsComponent />
-            <ContactComponent />
+            <div className="h-screen main">
+                <BannerComponent />
+                {/* <ProjectsComponent /> */}
+                {/* <ContactComponent /> */}
+            </div>
         </>
     )
 }

@@ -1,19 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { IoLogoFacebook, IoLogoGithub, IoLogoGoogle, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
+
 
 const NavBar = () => {
     return (
-        <div className="border-b-custom lg:w-full mx-auto  p-2 text-white">
-            <div className="items-baseline flex justify-between lg:w-10/12 p-2 mx-auto">
+        <div className="bg-[#040404] flex flex-col min-h-screen justify-between p-4 text-white">
 
+            <div className="flex flex-col items-center">
                 <Link href="/" passHref={true}>
-                    <h1 className="cursor-pointer text-white font-one font-thin text-xl">Michael Utoh</h1>
+                    <h1 className="cursor-pointer text-white font-one font-bold neonText text-6xl">M</h1>
                 </Link>
+                <p className="text-[#8a8a8a] text-xs">Web Developer</p>
+            </div>
 
-                <ul className="flex justify-between">
+            <div className="flex justify-center">
+                <ul className="flex flex-col items-center justify-between">
                     <motion.li
-                        className="ml-6 font-thin font-two cursor-pointer hover:text-blue-300 text-sm"
+                        className="font-thin font-two cursor-pointer hover:text-blue-300 my-2 text-md"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
                             rotate: [0, 10, -10, 0],
@@ -31,7 +36,7 @@ const NavBar = () => {
                         <a>About</a>
                     </motion.li>
                     <motion.li
-                        className="ml-6 font-thin font-two cursor-pointer hover:text-blue-300 text-sm"
+                        className="font-thin font-two cursor-pointer hover:text-blue-300 my-2 text-md"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
                             rotate: [0, 10, -10, 0],
@@ -46,10 +51,33 @@ const NavBar = () => {
                             }
                         }}
                     >
-                        <a>Contact</a>
+                        <a>Projects</a>
                     </motion.li>
                 </ul>
             </div>
+
+            <div className="flex flex-wrap justify-start">
+                <Link href="#" passHref={true}>
+                    <IoLogoLinkedin className="cursor-pointer icon-linkedin" color="white" fontSize={20} style={{ margin: 4 }} />
+                </Link>
+
+                <Link href="#" passHref={true}>
+                    <IoLogoGithub className="cursor-pointer icon-github" color="white" fontSize={20} style={{ margin: 4 }} />
+                </Link>
+
+                <Link href="#" passHref={true}>
+                    <IoLogoFacebook className="cursor-pointer icon-facebook" color="white" fontSize={20} style={{ margin: 4 }} />
+                </Link>
+
+                <Link href="#" passHref={true}>
+                    <IoLogoGoogle className="cursor-pointer icon-google" color="white" fontSize={20} style={{ margin: 4 }} />
+                </Link>
+
+                <Link href="#" passHref={true}>
+                    <IoLogoTwitter className="cursor-pointer icon-twitter" color="white" fontSize={20} style={{ margin: 4 }} />
+                </Link>
+            </div>
+
         </div>
     )
 }
