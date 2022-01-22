@@ -6,7 +6,8 @@ import { motion, animatePresence } from 'framer-motion';
 const ProjectsComponent = () => {
     return (
         <>
-            <div className="flex flex-col lg:flex-row items-center justify-center w-full my-20" id="projects">
+            <p className="text-center text-[#313131] text-10xl">Projects</p>
+            <div className="flex flex-col lg:flex-row items-center justify-center w-full" id="projects">
                 <motion.div
                     className="card cursor-pointer flex flex-col font items-center justify-center h-60 m-4 text-white w-64"
                     whileHover={{
@@ -25,7 +26,7 @@ const ProjectsComponent = () => {
                 >
                     <Link href="#" passHref={true}>
                         <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">AutoHub</p>
+                            <p className="font font-bold text-lg text-orange-400 mb-4 mt-14 text-center w-10/12">AutoHub</p>
                             <p className="font-thin text-md text-center">A personal project, written in Python, Rest Framework & React</p>
                         </div>
                     </Link>
@@ -50,7 +51,7 @@ const ProjectsComponent = () => {
                 >
                     <Link href="#" passHref={true}>
                         <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">The Sidebrief Project</p>
+                            <p className="font font-bold text-lg text-orange-400 mb-4 mt-14 text-center w-10/12">The Sidebrief Project</p>
                             <p className="font-thin text-md text-center">A business creation tool, frontend project made with JavaScript & React</p>
                         </div>
                     </Link>
@@ -75,7 +76,7 @@ const ProjectsComponent = () => {
                 >
                     <Link href="#" passHref={true}>
                         <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-blue-400 mb-4 mt-14 text-center w-10/12">IQ App</p>
+                            <p className="font font-bold text-lg text-orange-400 mb-4 mt-14 text-center w-10/12">IQ App</p>
                             <p className="font-thin text-md text-center">A valuable education tool built for school admins, tutors & scholars</p>
                         </div>
                     </Link>

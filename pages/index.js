@@ -1,4 +1,4 @@
-import NavBar from "../components/Navigation/NavBar";
+import NavBar from "../components/Navigation/sideBar";
 import Header from "../components/Navigation/Header"
 import HeroComponent from "../components/Main/homepage";
 

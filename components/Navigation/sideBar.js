@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { IoLogoFacebook, IoLogoGithub, IoLogoGoogle, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
+import { notifyEmail } from '../Utils/alert';
+import { Toaster } from 'react-hot-toast';
 
 
 const NavBar = () => {
@@ -18,7 +20,7 @@ const NavBar = () => {
             <div className="flex justify-center">
                 <ul className="flex flex-col items-center justify-between">
                     <motion.li
-                        className="font-thin font cursor-pointer hover:text-blue-300 my-2 text-sm"
+                        className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
                             rotate: [0, 10, -10, 0],
@@ -36,7 +38,7 @@ const NavBar = () => {
                         <a>About</a>
                     </motion.li>
                     <motion.li
-                        className="font-thin font cursor-pointer hover:text-blue-300 my-2 text-sm"
+                        className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
                             rotate: [0, 10, -10, 0],
@@ -66,7 +68,8 @@ const NavBar = () => {
                 </a>
 
                 <a href="#" passHref={true}>
-                    <IoLogoGoogle className="cursor-pointer icon-google" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
+                    <IoLogoGoogle className="cursor-pointer icon-google" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} onClick={() => notifyEmail()} />
+                    <Toaster />
                 </a>
 
                 <a href="#" passHref={true}>
