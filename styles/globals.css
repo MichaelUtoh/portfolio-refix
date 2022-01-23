@@ -59,9 +59,9 @@ body {
 }
 
 @keyframes flicker {
-  0% { color: #FEF9C3; }
-  50% { color: #D1FAE5; }
-  100% { color: #A5F3FC; }
+  0% { color: #fec3c3; }
+  50% { color: #faf9d1; }
+  100% { color: #b8a5fc; }
 }
 
 .pg-custom { font-size: 1rem; }

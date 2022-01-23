@@ -40,8 +40,8 @@ const BannerComponent = () => {
                     className="font-thin rounded-sm text-sm text-white"
                     variants={{ hidden: { scale: .8, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { delay: 1.5 }}}}
                 >
-                    <div class="box-1">
-                        <div class="btn btn-one">
+                    <div className="box-1">
+                        <div className="btn btn-one">
                             <span className="uppercase">More About Me</span>
                         </div>
                     </div>

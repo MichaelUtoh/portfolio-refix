@@ -16,7 +16,7 @@ const ContactComponent = () => {
                         <input className="greykol m-2 p-2 text-white w-5/12" id="fullname" name="fullname" placeholder="Fullname" />
                         <input className="greykol m-2 p-2 text-white w-5/12" id="email" name="email" placeholder="Email" />
                         <textarea className="greykol m-2 p-2 text-white w-5/12" id="review" name="review" placeholder="Review"></textarea>
-                        <button className="bg-blue-600 m-2 p-2 w-5/12">Submit</button>
+                        <button className="bg-orange-600 hover:bg-orange-500 m-2 p-2 w-5/12">Submit</button>
                     </div>
 
                     <p className="absolute bottom-2 bottom-center font left-50 text-[#fff] text-xs">Michael Utoh &copy; 2022</p>
