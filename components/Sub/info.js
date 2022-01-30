@@ -19,7 +19,11 @@ const DeveloperInfo = () => {
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
-                    <SiPython className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />                    
+                    <SiPython className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        Asides algorithms & data structures, writing small but powerful scripts in python has helped 
+                        me reduce time spent on repetitive processes.
+                    </p>                
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
@@ -32,10 +36,18 @@ const DeveloperInfo = () => {
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <FaGitAlt className="absolute left-[-20px] top-[-20px] text-red-400 m-2 text-3xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        Learning to use this one tool has helped speed up my development process & collaborate properly 
+                        with other developers. 
+                    </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiPostgresql className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        Postgres has proven to be a powerful tool which when combined with Django easily lets me 
+                        manipulate data with little or no hitch.
+                    </p>  
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
