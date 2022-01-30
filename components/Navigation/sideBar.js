@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion'
 import { IoLogoFacebook, IoLogoGithub, IoLogoGoogle, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
 import { notifyEmail } from '../Utils/alert';
 import { Toaster } from 'react-hot-toast';
+import { route } from 'next/dist/server/router';
 
 
 const NavBar = () => {
+
+    const router = useRouter()
+        
     return (
         <div className="bg-[#040404] flex flex-col min-h-screen items-center justify-between p-4 navbar text-white w-2/12">
 
@@ -19,6 +24,29 @@ const NavBar = () => {
 
             <div className="flex justify-center">
                 <ul className="flex flex-col items-center justify-between">
+                    {
+                        router.pathname !== "/" ?
+                        <motion.li
+                        className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
+                        whileHover={{
+                            scale: [1, 1.4, 1.2],
+                            rotate: [0, 10, -10, 0],
+                            filter: [
+                                'hue-rotate(0) contrast(100%)',
+                                'hue-rotate(360deg) contrast(200%)',
+                                'hue-rotate(45deg) contrast(300%)',
+                                'hue-rotate(0) contrast(100%)'
+                            ],
+                            transition: {
+                                duration: .2
+                            }
+                        }}
+                    >
+                        <Link href="/" passHref={true} >
+                            <a>Home</a>
+                        </Link> 
+                    </motion.li> : null
+                    }
                     <motion.li
                         className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
                         whileHover={{
@@ -35,7 +63,9 @@ const NavBar = () => {
                             }
                         }}
                     >
-                        <a>About</a>
+                        <Link href="/about" passHref={true} >
+                            <a>About</a>
+                        </Link> 
                     </motion.li>
                     <motion.li
                         className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
@@ -53,7 +83,9 @@ const NavBar = () => {
                             }
                         }}
                     >
-                        <a>Projects</a>
+                        <Link href="#projects" passHref={true}>
+                            <a>Projects</a>
+                        </Link>
                     </motion.li>
                 </ul>
             </div>

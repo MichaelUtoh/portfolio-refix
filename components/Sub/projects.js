@@ -6,7 +6,7 @@ import { motion, animatePresence } from 'framer-motion';
 const ProjectsComponent = () => {
     return (
         <>
-            <p className="text-center text-[#313131] text-10xl">Projects</p>
+            <p className="project-header text-center text-[#313131] text-10xl" id="projects">Projects</p>
             <div className="flex flex-col lg:flex-row items-center justify-center w-full" id="projects">
                 <motion.div
                     className="card cursor-pointer flex flex-col font items-center justify-center h-60 m-4 text-white w-64"
