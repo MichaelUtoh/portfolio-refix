@@ -83,7 +83,7 @@ const NavBar = () => {
                             }
                         }}
                     >
-                        <Link href="#projects" passHref={true}>
+                        <Link href="/projects" passHref={true}>
                             <a>Projects</a>
                         </Link>
                     </motion.li>

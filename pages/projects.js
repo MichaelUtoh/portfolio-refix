@@ -1,16 +1,16 @@
 import NavBar from "../components/Navigation/sideBar";
 import Header from "../components/Navigation/Header"
-import AboutComponent from "../components/Main/aboutPage";
+import ProjectsComponent from "../components/Main/projectsPage";
 // import HeroComponent from "../components/Main/homepage";
 
 
-export default function About() {
+export default function Projects() {
   return (
     <>
       <div className="flex bg-[#212121]">
-        <Header title="About" />
+        <Header title="Projects" />
         <NavBar />
-        <AboutComponent />
+        <ProjectsComponent />
       </div>
     </>
   )

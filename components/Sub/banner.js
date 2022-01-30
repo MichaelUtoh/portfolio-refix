@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 
 const BannerComponent = () => {
@@ -31,21 +32,23 @@ const BannerComponent = () => {
                 </motion.div>
 
                 <div className="typed-box">
-                    <p className="rounded-sm text-custom-alt text-xs tracking-wider font-medium text-orange-500 uppercase">Web Developer</p>
+                    <p className="rounded-sm text-custom-alt text-xs tracking-widest font-medium text-orange-500 uppercase">Web Developer</p>
                 </div>
 
-                <motion.button
-                    animate="visible"
-                    initial="hidden"
-                    className="font-thin rounded-sm text-sm text-white"
-                    variants={{ hidden: { scale: .8, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { delay: 1.5 }}}}
-                >
-                    <div className="box-1">
-                        <div className="btn btn-one">
-                            <span className="uppercase">More About Me</span>
+                <Link href="/about">
+                    <motion.button
+                        animate="visible"
+                        initial="hidden"
+                        className="font-thin rounded-sm text-sm text-white"
+                        variants={{ hidden: { scale: .8, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { delay: 1.5 }}}}
+                    >
+                        <div className="box-1">
+                            <div className="btn btn-one">
+                                <span className="uppercase">More About Me</span>
+                            </div>
                         </div>
-                    </div>
-                </motion.button>
+                    </motion.button>
+                </Link>
 
 
             </div>

@@ -89,7 +89,7 @@ body {
 @media screen and (max-width: 600px) {
   .banner-padding {
     align-items: center;
-    padding-left: 2rem;
+    padding: 13rem 0;
   }
   .contact-form { width: 80% !important; }
   .navbar { display: none; }

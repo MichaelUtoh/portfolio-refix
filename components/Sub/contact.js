@@ -12,19 +12,15 @@ const ContactComponent = () => {
                         can always reach me through mail.
                     </p>
 
-                    {/* <div className="flex flex-col items-center my-20 w-8/12"> */}
-                        <form className="contact-form flex flex-col items-center my-20 w-full">
-                            <input className="greykol m-2 p-2 text-white w-full" id="fullname" name="fullname" placeholder="Fullname" />
-                            <input className="greykol m-2 p-2 text-white" id="email" name="email" placeholder="Email" />
-                            <textarea className="greykol m-2 p-2 text-white" id="review" name="review" placeholder="Review"></textarea>
-                            <button className="bg-orange-600 hover:bg-orange-500 m-2 p-2 w-full">Submit</button>
-                        </form>
-                    {/* </div> */}
+                    <form className="contact-form flex flex-col items-center my-20 w-full">
+                        <input className="greykol m-2 p-2 text-white w-full" id="fullname" name="fullname" placeholder="Fullname" />
+                        <input className="greykol m-2 p-2 text-white" id="email" name="email" placeholder="Email" />
+                        <textarea className="greykol m-2 p-2 text-white" id="review" name="review" placeholder="Review"></textarea>
+                        <button className="bg-orange-600 hover:bg-orange-500 m-2 p-2 w-full">Submit</button>
+                    </form>
 
                     <p className="absolute bottom-2 bottom-center font left-50 text-[#fff] text-xs">Michael Utoh &copy; 2022</p>
                 </div>
-
-
 
             </div>
         </>
