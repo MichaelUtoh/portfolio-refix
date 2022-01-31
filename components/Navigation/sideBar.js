@@ -91,11 +91,11 @@ const NavBar = () => {
             </div>
 
             <div className="border border-[#343434] flex flex-col items-center justify-center p-4 rounded-full w-3/12">
-                <a href="https://www.linkedin.com/in/michael-utoh-b9074a193/" _target="blank">
+                <a href="https://www.linkedin.com/in/michael-utoh-b9074a193/" target="blank">
                     <IoLogoLinkedin className="cursor-pointer icon-linkedin" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
                 </a>
 
-                <a href="https://github.com/MichaelUtoh" _target="blank">
+                <a href="https://github.com/MichaelUtoh" target="blank">
                     <IoLogoGithub className="cursor-pointer icon-github" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
                 </a>
 
@@ -104,7 +104,7 @@ const NavBar = () => {
                     <Toaster />
                 </a>
 
-                <a href="https://twitter.com/Anonymac69" _target="blank">
+                <a href="https://twitter.com/Anonymac69" target="blank">
                     <IoLogoTwitter className="cursor-pointer icon-twitter" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
                 </a>
             </div>
