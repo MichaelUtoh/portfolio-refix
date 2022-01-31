@@ -91,7 +91,7 @@ const NavBar = () => {
             </div>
 
             <div className="border border-[#343434] flex flex-col items-center justify-center p-4 rounded-full w-3/12">
-                <a href="#" passHref={true}>
+                <a href="https://www.linkedin.com/in/michael-utoh-b9074a193/" _target="blank">
                     <IoLogoLinkedin className="cursor-pointer icon-linkedin" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
                 </a>
 
@@ -99,12 +99,12 @@ const NavBar = () => {
                     <IoLogoGithub className="cursor-pointer icon-github" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
                 </a>
 
-                <a href="#" passHref={true}>
+                <a href="#">
                     <IoLogoGoogle className="cursor-pointer icon-google" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} onClick={() => notifyEmail()} />
                     <Toaster />
                 </a>
 
-                <a href="#" passHref={true}>
+                <a href="https://twitter.com/Anonymac69" _target="blank">
                     <IoLogoTwitter className="cursor-pointer icon-twitter" color="white" fontSize={20} style={{ margin:4, mx:"auto" }} />
                 </a>
             </div>
