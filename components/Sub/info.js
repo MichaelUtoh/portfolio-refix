@@ -7,8 +7,8 @@ const DeveloperInfo = () => {
     <>
         <div className="flex flex-col m-4">
             
-            <h2 className="font-one ml-10 text-white text-3xl uppercase">Technologies I use frequently</h2>
-            <div className="flex flex-wrap m-4 p-4 rounded-md w-full">
+            <p className="project-header text-center text-[#313131] text-9xl" id="projects">Technologies</p>
+            <div className="flex flex-wrap justify-center m-4 p-4 rounded-md w-full">
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiDjango className="absolute left-[-20px] top-[-20px] text-green-400 m-2 text-2xl" />
@@ -28,16 +28,24 @@ const DeveloperInfo = () => {
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiJavascript className="absolute left-[-20px] top-[-20px] text-yellow-400 m-2 text-2xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        I enjoy creating little magical pieces on the frontend, and this is nearly impossible to do 
+                        without JS.
+                    </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiReact className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        The things I love the most about React are its reusable components, props, and the fact that 
+                        it pushes me to go more in-depth in my knowledge of JavaScript.
+                    </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <FaGitAlt className="absolute left-[-20px] top-[-20px] text-red-400 m-2 text-3xl" />
                     <p className="text-sm text-gray-300 text-center">
-                        Learning to use this one tool has helped speed up my development process & collaborate properly 
+                        Learning and using useful git commands on a dialy basis helps me collaborate properly 
                         with other developers. 
                     </p>
                 </div>
