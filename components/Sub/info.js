@@ -52,15 +52,27 @@ const DeveloperInfo = () => {
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiTailwindcss className="absolute left-[-20px] top-[-20px] text-cyan-300 m-2 text-3xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        Styling with tailwindCss has improved my speed and productivity, there is so much I can do just 
+                        by adding a few lines of tailwind classes
+                    </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiChakraui className="absolute left-[-20px] top-[-20px] text-green-400 m-2 text-2xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        ChakraUI helps me easily create customized and reusable components, one of my favorite means of 
+                        styling in React
+                    </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiHtml5 className="absolute left-[-20px] top-[-20px] text-orange-500 m-2 text-2xl" />
                     <SiCss3 className="absolute left-[10px] top-[-20px] text-blue-400 m-2 text-2xl" />
+                    <p className="text-sm text-gray-300 text-center">
+                        Ever since learning the fundamentals, I have conntinued to hone my skills in learning how to use 
+                        techniques such as Flexbox and Grid.
+                    </p>
                 </div>
 
             </div>
