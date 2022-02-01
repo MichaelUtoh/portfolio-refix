@@ -8,7 +8,6 @@ const DeveloperInfo = () => {
         <div className="flex flex-col m-4">
             <StoryBox />
             <CardsComponent />
-
         </div>
     </>
   );

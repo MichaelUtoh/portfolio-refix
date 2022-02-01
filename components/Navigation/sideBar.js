@@ -19,7 +19,7 @@ const NavBar = () => {
                 <Link href="/" passHref={true}>
                     <h1 className="cursor-pointer text-white font font-bold neonText text-6xl">M</h1>
                 </Link>
-                <p className="text-[#8a8a8a] text-xs">Web Developer</p>
+                <p className="text-[#8a8a8a] text-center text-xs">Web Developer</p>
             </div>
 
             <div className="flex justify-center">
