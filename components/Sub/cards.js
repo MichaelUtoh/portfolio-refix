@@ -36,7 +36,7 @@ const CardsComponent = () => {
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiReact className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        I learnt to use the library by building small projects, React's reusable components & props 
+                        I learnt to use the library by building small projects, React&apos;'s reusable components & props 
                         are invaluable.
                     </p>
                 </div>

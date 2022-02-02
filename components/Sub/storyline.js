@@ -3,6 +3,7 @@ import React from 'react';
 const StoryBox = () => {
   return (
         <>
+            <p className="skill-header text-center text-[#313131] text-9xl" id="projects">Who am I</p>
             <div className="flex items-center py-20">
 
                 <div className="flex flex-wrap mx-auto w-10/12">

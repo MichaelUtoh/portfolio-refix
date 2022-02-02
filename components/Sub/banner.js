@@ -35,7 +35,7 @@ const BannerComponent = () => {
                     <p className="rounded-sm text-custom-alt text-xs tracking-widest font-medium text-orange-500 uppercase">Web Developer</p>
                 </div>
 
-                <Link href="/about">
+                <Link href="/about" passHref={true}>
                     <motion.button
                         animate="visible"
                         initial="hidden"
