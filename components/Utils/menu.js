@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HambergerMenu = ({ style }) => {
+const HambergerMenu = () => {
   return (
     <>
-        <div className={style}>
+        <div className="">
             <ul className="flex flex-col">
                 <li>Home</li>
                 <li>About</li>
