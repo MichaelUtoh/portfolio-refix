@@ -6,7 +6,7 @@ import { FaGitAlt } from 'react-icons/fa'
 const CardsComponent = () => {
   return (
         <>
-            <p className="title-header mb-10 text-center text-[#313131] text-9xl" id="technologies">Technologies</p>
+            <p className="mt-20 title-header mb-10 text-center text-[#313131] text-9xl" id="technologies">Technologies</p>
             <div className="flex flex-wrap justify-center m-4 p-4 rounded-md w-full">
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">

@@ -126,9 +126,9 @@ div[class*=box-1] {
 .neonText { animation: flicker 5s infinite alternate; }
 
 @keyframes flicker {
-  0% { color: #fec3c3; }
-  50% { color: #faf9d1; }
-  100% { color: #fcdca5; }
+  0% { color: #dcfce7; }
+  50% { color: #f3e8ff; }
+  100% { color: #cffafe; }
 }
 
 .pg-custom { font-size: 1rem; }
@@ -138,11 +138,15 @@ div[class*=box-1] {
 .typed-box { height: 50px; }
 
 @media screen and (max-width: 1100px) {
-  .title-header { font-size: 8rem }
+  .title-header { font-size: 6rem }
   .pg-custom { font-size: .9rem; }
   .skill-header { font-size: 5rem; }
   .text-custom { font-size: 3rem; }
   .text-custom-alt { font-size: 1.4rem; }
+}
+
+@media screen and (max-width: 800px) {
+  .title-header { font-size: 4rem }
 }
 
 @media screen and (max-width: 600px) {
@@ -153,10 +157,13 @@ div[class*=box-1] {
   .contact-form { width: 80% !important; }
   .navbar { display: none; }
   .pg-custom { font-size: .8rem; }
-  .title-header { font-size: 5rem }
+  .title-header { font-size: 4rem }
   .skill-card-text { font-size: 0.75rem; }
   .skill-header { font-size: 3.5rem; }
   .text-custom { font-size: 2.4rem; }
   .text-custom-alt { font-size: 1.1rem; }
 }
 
+@media screen and (max-width: 450px) {
+  .title-header { font-size: 2.7rem }
+}
