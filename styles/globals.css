@@ -128,7 +128,7 @@ div[class*=box-1] {
 @keyframes flicker {
   0% { color: #fec3c3; }
   50% { color: #faf9d1; }
-  100% { color: #b8a5fc; }
+  100% { color: #fcdca5; }
 }
 
 .pg-custom { font-size: 1rem; }
@@ -138,7 +138,7 @@ div[class*=box-1] {
 .typed-box { height: 50px; }
 
 @media screen and (max-width: 1100px) {
-  .project-header { font-size: 8rem }
+  .title-header { font-size: 8rem }
   .pg-custom { font-size: .9rem; }
   .skill-header { font-size: 5rem; }
   .text-custom { font-size: 3rem; }
@@ -153,7 +153,7 @@ div[class*=box-1] {
   .contact-form { width: 80% !important; }
   .navbar { display: none; }
   .pg-custom { font-size: .8rem; }
-  .project-header { font-size: 5rem }
+  .title-header { font-size: 5rem }
   .skill-card-text { font-size: 0.75rem; }
   .skill-header { font-size: 3.5rem; }
   .text-custom { font-size: 2.4rem; }

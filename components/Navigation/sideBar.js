@@ -24,10 +24,8 @@ const NavBar = () => {
 
             <div className="flex justify-center">
                 <ul className="flex flex-col items-center justify-between">
-                    {
-                        router.pathname !== "/" ?
                         <motion.li
-                        className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
+                        className="font-medium font cursor-pointer hover:text-green-400 my-2 text-sm"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
                             rotate: [0, 10, -10, 0],
@@ -45,10 +43,9 @@ const NavBar = () => {
                         <Link href="/" passHref={true} >
                             <a>Home</a>
                         </Link> 
-                    </motion.li> : null
-                    }
+                    </motion.li>
                     <motion.li
-                        className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
+                        className="font-medium font cursor-pointer hover:text-green-400 my-2 text-sm"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
                             rotate: [0, 10, -10, 0],
@@ -67,7 +64,7 @@ const NavBar = () => {
                             <a>About</a>
                         </Link> 
                     </motion.li>
-                    <motion.li
+                    {/* <motion.li
                         className="font-medium font cursor-pointer hover:text-orange-400 my-2 text-sm"
                         whileHover={{
                             scale: [1, 1.4, 1.2],
@@ -86,7 +83,7 @@ const NavBar = () => {
                         <Link href="/projects" passHref={true}>
                             <a>Projects</a>
                         </Link>
-                    </motion.li>
+                    </motion.li> */}
                 </ul>
             </div>
 
