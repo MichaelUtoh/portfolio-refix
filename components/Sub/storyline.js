@@ -11,8 +11,8 @@ const StoryBox = () => {
                         <div className="mx-auto p-2 md:w-full lg:w-8/12">
                             <h2 className="font-thin text-6xl text-green-300">Hi</h2>
                             <p className="mt-1 text-gray-300 sm:w-full text-sm md:text-md lg:text-lg storybox-text">
-                                My name is Michael Utoh, I am a fullstack web developer, specializing in building Interesting experiences, 
-                                revolutionizing the internet, one <span className="text-green-300">{str}</span> at a time.
+                                My name is Michael Utoh, I am a fullstack web developer, crafting Interesting experiences and 
+                                revolutionizing the internet, <br/> one <span className="text-green-300">{str}</span> at a time.
                             </p>
                         </div>
 
