@@ -12,7 +12,7 @@ const StoryBox = () => {
                             <h2 className="font-thin text-6xl text-green-300">Hi</h2>
                             <p className="mt-1 text-gray-300 sm:w-full text-sm md:text-md lg:text-lg storybox-text">
                                 My name is Michael Utoh, I am a fullstack web developer, specializing in building Interesting experiences, 
-                                revolutionizing the internet, one <span className="text-green-300">{str}</span> at a time
+                                revolutionizing the internet, one <span className="text-green-300">{str}</span> at a time.
                             </p>
                         </div>
 

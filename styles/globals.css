@@ -112,6 +112,8 @@ div[class*=box-1] {
   width: 100% !important;
 }
 
+.hamburger { display: none; }
+
 .icon-facebook:hover { color: #3B5998; }
 .icon-google:hover { color: #fff; }
 .icon-github:hover { color: #171515; }
@@ -155,6 +157,7 @@ div[class*=box-1] {
     padding: 13rem 0;
   }
   .contact-form { width: 80% !important; }
+  .hamburger { display: flex; }
   .navbar { display: none; }
   .pg-custom { font-size: .8rem; }
   .title-header { font-size: 4rem }
