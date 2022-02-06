@@ -112,17 +112,29 @@ div[class*=box-1] {
   width: 100% !important;
 }
 
-.hamburger { display: none; }
-/* .hamburger-hide {
+.hamburger { 
+  display: none;
+  transition: transform .5s ease-in-out;
+}
+
+.hamburger:hover {
+  transform: rotate(360deg);
+}
+
+.hamburger-menu-hide {
+  position: absolute;
   display: none;
 }
-.hamburger-show {
-  background: #fff;
-  height: 60px;
+
+.hamburger-menu-show {
+  position: absolute;
   display: flex;
-  z-index: 10;
 }
- */
+
+.hamburger-wrap {
+  /* position: relative; */
+}
+
 .icon-facebook:hover { color: #3B5998; }
 .icon-google:hover { color: #fff; }
 .icon-github:hover { color: #171515; }
