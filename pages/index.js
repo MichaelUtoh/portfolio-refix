@@ -28,17 +28,17 @@ export default function Home() {
 
           <div
             className={showMenu ?
-              "bg-[#212121] flex flex-col hamburger-menu-show h-screen items-center justify-start m-2 p-4 rounded-md w-11/12 z-10" :
-              "bg-[#212121] flex flex-col hamburger-menu-hide h-screen items-center justify-start m-2 p-4 rounded-md w-11/12 z-10"
+              "bg-[#212121] flex flex-col hamburger-menu-show h-screen items-center justify-start p-4 rounded-md w-full z-10" :
+              "bg-[#212121] flex flex-col hamburger-menu-hide h-screen items-center justify-start p-4 rounded-md w-full z-10"
             }
           >
             <div className="bg-[#444] flex flex-col h-32 items-center justify-center rounded-md w-full">
               <Link href="/" passHref={false}>
-                <span className="cursor-pointer my-2 text-green-400">Home</span>
+                <span className="cursor-pointer my-2 text-white">Home</span>
               </Link>
 
               <Link href="/about" passHref={false}>
-                <span className="cursor-pointer my-2 text-green-400">About</span>
+                <span className="cursor-pointer my-2 text-white">About</span>
               </Link>
             </div>
           </div>
