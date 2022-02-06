@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup'
+import axios from 'axios';
 
 
 const ContactComponent = () => {
@@ -20,10 +21,16 @@ const ContactComponent = () => {
             email: Yup.string().email('Invalid email address').required('Required'),
             message: Yup.string().max(1000, 'Maximum of 1000 characters allowed')
         }),
-        onSubmit: values => {
-            console.log(values);
-        }
     })
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formik.values)
+    }
+
+    // useEffect(() => {
+    //     axios.post()
+    // })
 
     return (
         <>
@@ -67,7 +74,10 @@ const ContactComponent = () => {
                             onChange={formik.handleChange}
                         ></textarea>
 
-                        <button className="bg-green-600 greykol-btn hover:bg-green-500 m-2 p-2 w-full">Submit</button>
+                        <button
+                            className="bg-green-600 greykol-btn hover:bg-green-500 m-2 p-2 w-full"
+                            onSubmit={() => handleSubmit()}
+                        >Submit</button>
                     </form>
 
                     <p className="font p-2 text-[#fff] text-xs">Michael Utoh &copy; 2022</p>
