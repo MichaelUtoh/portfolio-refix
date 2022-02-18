@@ -24,7 +24,7 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <a href="https://web.bizedgeapp.com" target="_blank" passHref={true}>
+                    <a href="https://web.bizedgeapp.com" target="blank">
                         <div className="flex flex-col h-full items-center justify-start p-3">
                             <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">Bizedge</p>
                             <p className="font-thin text-sm text-center text-white">A suite of business management tools, I am a priviledged contributor on this project.</p>
@@ -49,7 +49,7 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <a href="https://app-sidebrief.netlify.app/" target="_blank" passHref={true}>
+                    <a href="https://app-sidebrief.netlify.app/" target="blank">
                         <div className="flex flex-col h-full items-center justify-start p-3">
                             <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">The Sidebrief Project</p>
                             <p className="font-thin text-sm text-center text-white">A business creation tool, frontend project made with JavaScript & React</p>
@@ -74,7 +74,7 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <a href="https://iq.torilo.ng/" target="_blank" passHref={true}>
+                    <a href="https://iq.torilo.ng/" target="blank">
                         <div className="flex flex-col h-full items-center justify-start p-3">
                             <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">IQ App</p>
                             <p className="font-thin text-sm text-center text-white">A school management application system built with Python & Django.</p>

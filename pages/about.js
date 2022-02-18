@@ -32,11 +32,11 @@ export default function About() {
             }
           >
             <div className="bg-[#444] flex flex-col h-32 items-center justify-center rounded-md w-full">
-              <Link href="/" passHref={false}>
+              <Link href="/" passHref={true}>
                 <span className="cursor-pointer my-2 text-green-400">Home</span>
               </Link>
 
-              <Link href="/about" passHref={false}>
+              <Link href="/about" passHref={true}>
                 <span className="cursor-pointer my-2 text-green-400">About</span>
               </Link>
             </div>

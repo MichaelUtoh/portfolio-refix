@@ -28,9 +28,6 @@ const ContactComponent = () => {
         console.log(formik.values)
     }
 
-    // useEffect(() => {
-    //     axios.post()
-    // })
 
     return (
         <>
@@ -76,7 +73,7 @@ const ContactComponent = () => {
 
                         <button
                             className="bg-green-600 greykol-btn hover:bg-green-500 m-2 p-2 w-full"
-                            onSubmit={() => handleSubmit()}
+                            onSubmit={() => formik.handleSubmit()}
                         >Submit</button>
                     </form>
 
