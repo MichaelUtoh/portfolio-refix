@@ -32,7 +32,7 @@ const BannerComponent = () => {
                 </motion.div>
 
                 <div className="typed-box">
-                    <p className="rounded-sm text-custom-alt text-xs tracking-widest font-medium text-green-400 uppercase">Web Developer</p>
+                    <p className="rounded-sm text-custom-alt text-xs tracking-widest font-medium text-green-400 uppercase">Backend Developer</p>
                 </div>
 
                 <Link href="/about" passHref={true}>
