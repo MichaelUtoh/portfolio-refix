@@ -49,10 +49,10 @@ const ProjectsComponent = () => {
                         }
                     }}
                 >
-                    <a href="https://app-sidebrief.netlify.app/" target="blank">
+                    <a href="https://junglecreations.com/" target="blank">
                         <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">The Sidebrief Project</p>
-                            <p className="font-thin text-sm text-center text-white">A business creation tool, frontend project made with JavaScript & React</p>
+                            <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">CPAS/Jungle Project</p>
+                            <p className="font-thin text-sm text-center text-white">A Dashboard solution for previewing & managing business data analytics on Snapchat and Facebook</p>
                         </div>
                     </a>
                 </motion.div>
