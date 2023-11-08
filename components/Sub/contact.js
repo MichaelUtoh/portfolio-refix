@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useForm } from "@formspree/react"
-import BannerComponent from './banner';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const ContactComponent = () => {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" })
     const [state, handleSubmit] = useForm("myyqvoyy");
+
+    const notify = () => toast('Thanks for your feedback, you will get a reply soon.')
 
     const handleScrollToSection = () => {
         const section = document.getElementById('banner');
@@ -16,8 +16,15 @@ const ContactComponent = () => {
         }
     };
 
+    const handleClearForm = (e) => {
+        e.preventDefault()
+        setFormData({ name: "", email: "", message: "" })
+        handleScrollToSection()
+    }
+
     if (state.succeeded) {
         handleScrollToSection()
+        handleClearForm()
     }
 
     return (
@@ -36,6 +43,8 @@ const ContactComponent = () => {
                             className="greykol m-2 p-2 text-white w-full"
                             name="name"
                             placeholder="Name"
+                            value={formData.name}
+                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                             type="text"
                         />
 
@@ -43,6 +52,8 @@ const ContactComponent = () => {
                             className="greykol m-2 p-2 text-white"
                             name="email"
                             placeholder="Email"
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                             type="email"
                         />
 
@@ -51,12 +62,15 @@ const ContactComponent = () => {
                             id="message"
                             name="message"
                             placeholder="Your message"
+                            value={formData.message}
+                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                             type="text"
                         ></textarea>
 
                         <button
                             className="bg-green-600 greykol-btn hover:bg-green-500 m-2 p-2 w-full"
                             type="submit"
+                            onClick={(e) => { handleClearForm(e), notify() }}
                         >Submit</button>
                     </form>
 
