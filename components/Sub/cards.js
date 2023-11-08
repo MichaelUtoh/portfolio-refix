@@ -1,10 +1,10 @@
 import React from 'react';
-import { SiCss3, SiDjango, SiHtml5, SiJavascript, SiPostgresql, SiPython, SiReact, SiTailwindcss, SiChakraui } from 'react-icons/si'
+import { SiCss3, SiGitlab, SiDjango, SiHtml5, SiMongodb, SiJavascript, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiTailwindcss, SiChakraui, SiGraphql } from 'react-icons/si'
 import { FaGitAlt } from 'react-icons/fa'
 
 
 const CardsComponent = () => {
-  return (
+    return (
         <>
             <p className="mt-20 title-header mb-10 text-center text-[#313131] text-9xl" id="technologies">Technologies</p>
             <div className="flex flex-wrap justify-center m-4 p-4 rounded-md w-full">
@@ -20,56 +20,57 @@ const CardsComponent = () => {
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiPython className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        Asides algorithms & data structures, writing small but powerful scripts in python has helped 
+                        Asides algorithms & data structures, writing small but powerful scripts in python has helped
                         me reduce time spent on repetitive processes.
-                    </p>                
+                    </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiJavascript className="absolute left-[-20px] top-[-20px] text-yellow-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        I enjoy creating little magical pieces on the frontend, and this is nearly impossible to do 
+                        I enjoy creating little magical pieces on the frontend, and this is nearly impossible to do
                         without JS.
                     </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiReact className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
+                    <SiNextdotjs className="absolute left-[20px] top-[-20px] text-white-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        I learnt to use the library by building small projects, React&apos;s reusable components & props 
-                        are invaluable.
+                        I use NextJs to quickly create robust web application, static and server side applications respectively.
                     </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <FaGitAlt className="absolute left-[-20px] top-[-20px] text-red-400 m-2 text-3xl" />
+                    <SiGitlab className="absolute left-[20px] top-[-18px] text-blue-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        Using helpful git commands on a dialy basis has grows my collaborate skills with other 
-                        developers. 
+                        I am proficiennt with the Linux command line, Git, Github & Gitlab as primary means of managing
+                        the different stages of my applications, and collaborating with others.
                     </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
                     <SiPostgresql className="absolute left-[-20px] top-[-20px] text-blue-400 m-2 text-2xl" />
+                    <SiMongodb className="absolute left-[10px] top-[-20px] text-green-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        Postgres combined with Django easily lets me manipulate data with little configuration and a 
-                        handful of queries.
-                    </p>  
-                </div>
-
-                <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
-                    <SiTailwindcss className="absolute left-[-20px] top-[-20px] text-cyan-300 m-2 text-3xl" />
-                    <p className="skill-card-text text-sm text-gray-300 text-center">
-                        Styling with tailwindCss has improved my speed and productivity, there is so much I can do just 
-                        by adding a few lines of tailwind classes
+                        For storage operations, I have worked with relational and documennt based databases.
                     </p>
                 </div>
 
                 <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
-                    <SiChakraui className="absolute left-[-20px] top-[-20px] text-green-400 m-2 text-2xl" />
+                    <SiTailwindcss className="absolute left-[-20px] top-[-22px] text-cyan-300 m-2 text-3xl" />
+                    <SiChakraui className="absolute left-[20px] top-[-20px] text-green-400 m-2 text-2xl" />
                     <p className="skill-card-text text-sm text-gray-300 text-center">
-                        ChakraUI helps me easily create customized and reusable components, one of my favorite means of 
-                        styling in React
+                        Styling with tailwindCss and ChakraUI improves my speed and productivity, manipulating components
+                        and designing robust, responsive screens easily.
+                    </p>
+                </div>
+
+                <div className="card flex font items-center justify-center h-40 m-4 mt-10 p-4 relative text-white w-72">
+                    <SiGraphql className="absolute left-[-20px] top-[-20px] text-pink-400 m-2 text-2xl" />
+                    <p className="skill-card-text text-sm text-gray-300 text-center">
+                        As an alternative to REST APIs, i also write fast and efficient APIs using graphql.
                     </p>
                 </div>
 
