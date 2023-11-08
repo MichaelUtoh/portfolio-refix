@@ -8,11 +8,11 @@ const BannerComponent = () => {
     return (
         <>
             <div className="flex flex-col items-start justify-center banner-padding">
-                <motion.div 
-                    initial={{ opacity:0, y:-1000 }}
-                    animate={{ opacity:1, y: [-1000, 10, -10, 0], transition:{ duration:1 } }}
+                <motion.div
+                    initial={{ opacity: 0, y: -1000 }}
+                    animate={{ opacity: 1, y: [-1000, 10, -10, 0], transition: { duration: 1 } }}
                 >
-                    <div className="flex lg:w-full">
+                    <div className="flex lg:w-full" id="banner">
                         <p className="font-medium font text-custom uppercase text-white">
                             <span className="bounce">M</span>
                             <span className="bounce">i</span>
@@ -40,7 +40,7 @@ const BannerComponent = () => {
                         animate="visible"
                         initial="hidden"
                         className="font-thin rounded-sm text-sm text-white"
-                        variants={{ hidden: { scale: .8, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { delay: 1.5 }}}}
+                        variants={{ hidden: { scale: .8, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { delay: 1.5 } } }}
                     >
                         <div className="box-1">
                             <div className="btn btn-one">

@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "axios": "^0.25.0",
     "formik": "^2.2.9",
     "framer-motion": "^5.5.5",
