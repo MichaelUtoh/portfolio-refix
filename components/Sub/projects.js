@@ -1,89 +1,31 @@
-import Link from 'next/link'
-import { motion, animatePresence } from 'framer-motion';
+import { IoArrowUpOutline } from 'react-icons/io5'
 
+const work = [
+  { title: 'Bizedge', description: 'A considered suite of business-management tools built to bring daily operations into focus.', href: 'https://web.bizedgeapp.com', className: 'feature-visual visual-bizedge', type: 'copy', image: "/bizedge.png" },
+  { title: 'Unboxie', description: 'An AI Powered gifting service.', href: 'https://unboxie.ai/', className: 'project-note note-jungle', type: 'copy', image: "/unboxie.png" },
+  { title: 'IQ4Schools', description: 'A school-management platform engineered with Python and Django for clarity at every step.', href: 'https://iq.torilo.ng/', className: 'project-note note-iq', type: 'copy', image: "/iq4schools.png" },
+  { title: 'Systems, thoughtfully made', description: 'From API architecture to the smallest interface details, I shape useful products that feel uncomplicated.', href: '/about', className: 'feature-visual visual-system', type: 'visual', image: "" },
+]
 
+const Arrow = () => <span className="arrow-link"><IoArrowUpOutline /></span>
 
-const ProjectsComponent = () => {
-    return (
-        <>
-            <p className="title-header my-16 text-center text-[#313131] text-9xl" id="projects">Projects</p>
-            <div className="flex flex-col lg:flex-row items-center justify-center w-full" id="projects">
-                <motion.div
-                    className="card cursor-pointer flex flex-col font items-center justify-center h-60 m-4 text-white w-64"
-                    whileHover={{
-                        scale: [1, 1.4, 1.2],
-                        rotate: [0, 10, -10, 0],
-                        filter: [
-                            'hue-rotate(0) contrast(100%)',
-                            'hue-rotate(360deg) contrast(200%)',
-                            'hue-rotate(45deg) contrast(300%)',
-                            'hue-rotate(0) contrast(100%)'
-                        ],
-                        transition: {
-                            duration: .2
-                        }
-                    }}
-                >
-                    <a href="https://web.bizedgeapp.com" target="blank">
-                        <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">Bizedge</p>
-                            <p className="font-thin text-sm text-center text-white">A suite of business management tools, I am a priviledged contributor on this project.</p>
-                        </div>
-                    </a>
-                </motion.div>
+const ProjectsComponent = () => (
+  <div className="portfolio-shell">
+    <section className="intro" id="about">
+      <p className="eyebrow">Independent developer</p>
+      <h1>Building digital products with care and character.</h1>
+      <p>I&rsquo;m Michael, a backend developer who enjoys turning complex workflows into calm, capable experiences.</p>
+    </section>
+    <section className="work-grid" id="work" aria-label="Selected work">
+      {work.map((project, index) => (
+        <a className={project.className} href={project.href} target={project.href.startsWith('http') ? '_blank' : undefined} rel={project.href.startsWith('http') ? 'noreferrer' : undefined} key={project.title} style={{ backgroundImage: `url(${project.image})` }}>
+          {project.type === 'visual' && <div className="visual-art" aria-hidden="true"><span /><span /><span /></div>}
+          <div className="project-content"><Arrow /><div><p className="project-index">0{index + 1} / Selected work</p><h2>{project.title}</h2><p>{project.description}</p></div></div>
+        </a>
+      ))}
+    </section>
+    <section className="contact-strip" id="contact"><p>Have a project in mind?</p><a href="mailto:michaelutoh@gmail.com">Let&rsquo;s work together <IoArrowUpOutline /></a></section>
+  </div>
+)
 
-
-                <motion.div
-                    className="card cursor-pointer flex flex-col font items-center justify-center h-60 m-4 text-white w-64"
-                    whileHover={{
-                        scale: [1, 1.4, 1.2],
-                        rotate: [0, 10, -10, 0],
-                        filter: [
-                            'hue-rotate(0) contrast(100%)',
-                            'hue-rotate(360deg) contrast(200%)',
-                            'hue-rotate(45deg) contrast(300%)',
-                            'hue-rotate(0) contrast(100%)'
-                        ],
-                        transition: {
-                            duration: .2
-                        }
-                    }}
-                >
-                    <a href="https://junglecreations.com/" target="blank">
-                        <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">CPAS/Jungle Project</p>
-                            <p className="font-thin text-sm text-center text-white">A Dashboard solution for previewing & managing business data analytics on Snapchat and Facebook</p>
-                        </div>
-                    </a>
-                </motion.div>
-
-
-                <motion.div
-                    className="card cursor-pointer flex flex-col font items-center justify-center h-60 m-4 text-white w-64"
-                    whileHover={{
-                        scale: [1, 1.4, 1.2],
-                        rotate: [0, 10, -10, 0],
-                        filter: [
-                            'hue-rotate(0) contrast(100%)',
-                            'hue-rotate(360deg) contrast(200%)',
-                            'hue-rotate(45deg) contrast(300%)',
-                            'hue-rotate(0) contrast(100%)'
-                        ],
-                        transition: {
-                            duration: .2
-                        }
-                    }}
-                >
-                    <a href="https://iq.torilo.ng/" target="blank">
-                        <div className="flex flex-col h-full items-center justify-start p-3">
-                            <p className="font font-bold text-lg text-green-400 mb-4 mt-14 text-center w-10/12">IQ App</p>
-                            <p className="font-thin text-sm text-center text-white">A school management application system built with Python & Django.</p>
-                        </div>
-                    </a>
-                </motion.div>
-            </div>
-        </>
-    )
-}
-
-export default ProjectsComponent;
+export default ProjectsComponent
