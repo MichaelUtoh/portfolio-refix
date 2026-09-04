@@ -4,7 +4,7 @@ const work = [
   { title: 'Bizedge', description: 'A considered suite of business-management tools built to bring daily operations into focus.', href: 'https://web.bizedgeapp.com', className: 'feature-visual visual-bizedge', type: 'copy', image: "/bizedge.png" },
   { title: 'Unboxie', description: 'An AI Powered gifting service.', href: 'https://unboxie.ai/', className: 'project-note note-jungle', type: 'copy', image: "/unboxie.png" },
   { title: 'IQ4Schools', description: 'A school-management platform engineered with Python and Django for clarity at every step.', href: 'https://iq.torilo.ng/', className: 'project-note note-iq', type: 'copy', image: "/iq4schools.png" },
-  { title: 'Systems, thoughtfully made', description: 'From API architecture to the smallest interface details, I shape useful products that feel uncomplicated.', href: '/about', className: 'feature-visual visual-system', type: 'visual', image: "" },
+  { title: 'DSLMS', description: 'An efficient e-learning management system.', href: 'https://play.google.com/store/apps/details?id=com.prunedge.dslms&hl=en&pli=1', className: 'feature-visual visual-system', type: 'visual', image: "/dslms.png" },
 ]
 
 const Arrow = () => <span className="arrow-link"><IoArrowUpOutline /></span>
