@@ -7,8 +7,6 @@ const work = [
   { title: 'DSLMS', description: 'An efficient e-learning management system.', href: 'https://play.google.com/store/apps/details?id=com.prunedge.dslms&hl=en&pli=1', className: 'feature-visual visual-system', type: 'visual', image: "/dslms.png" },
 ]
 
-const Arrow = () => <span className="arrow-link"><IoArrowUpOutline /></span>
-
 const ProjectsComponent = () => (
   <div className="portfolio-shell">
     <section className="intro" id="about">
@@ -20,7 +18,7 @@ const ProjectsComponent = () => (
       {work.map((project, index) => (
         <a className={project.className} href={project.href} target={project.href.startsWith('http') ? '_blank' : undefined} rel={project.href.startsWith('http') ? 'noreferrer' : undefined} key={project.title} style={{ backgroundImage: `url(${project.image})` }}>
           {project.type === 'visual' && <div className="visual-art" aria-hidden="true"><span /><span /><span /></div>}
-          <div className="project-content"><Arrow /><div><p className="project-index">0{index + 1} / Selected work</p><h2>{project.title}</h2><p>{project.description}</p></div></div>
+          <div className="project-content"><div><p className="project-index">0{index + 1} / Selected work</p><h2>{project.title}</h2><p>{project.description}</p></div></div>
         </a>
       ))}
     </section>

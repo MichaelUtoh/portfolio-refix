@@ -221,13 +221,11 @@ div[class*=box-1] {
 .visual-system .visual-art span:nth-child(1) { background: #e8d1b2; border-radius: 50%; height: 78%; left: -16%; top: 25%; width: 68%; }
 .visual-system .visual-art span:nth-child(2) { background: #161817; border: 3px solid #a0aa9e; height: 78%; left: 36%; top: 15%; width: 43%; }
 .visual-system .visual-art span:nth-child(3) { background: #d6ddce; height: 25%; left: 43%; top: 35%; width: 29%; }
-.project-content { align-items: flex-start; display: flex; flex: 1; flex-direction: column; justify-content: space-between; padding: 2.15rem; position: relative; z-index: 1; }
+.project-content { align-items: flex-start; display: flex; flex: 1; flex-direction: column; justify-content: flex-end; padding: 2.15rem; position: relative; z-index: 1; }
 .feature-visual .project-content { background: linear-gradient(0deg, #080908d9, transparent 65%); justify-content: flex-end; padding-top: 7rem; }
 .project-content > div { background: rgba(8, 9, 8, .82); border: 1px solid rgba(255, 255, 255, .1); border-radius: 1rem; max-width: 30rem; padding: 1.25rem; }
 .project-content h2 { color: #f9f7f2; font-size: clamp(1.35rem, 2vw, 1.75rem); font-weight: 400; letter-spacing: -.045em; margin: 0 0 .7rem; }
 .project-content > div > p:last-child { color: #bbb7af; font-size: 1rem; line-height: 1.55; margin: 0; max-width: 30rem; }
-.arrow-link { align-items: center; background: #1a1917; border-radius: 50%; color: #e8e5de; display: flex; font-size: 1.1rem; height: 3.7rem; justify-content: center; margin-left: auto; transition: transform .25s ease, background .25s ease; width: 3.7rem; }
-.project-note:hover .arrow-link, .feature-visual:hover .arrow-link { background: #3a3732; transform: translate(3px, -3px); }
 .note-iq { min-height: 22rem; }
 .contact-strip { align-items: center; border-top: 1px solid #393632; display: flex; justify-content: space-between; margin-top: 4rem; padding: 2rem; }
 .contact-strip p { color: #aaa7a1; margin: 0; }
